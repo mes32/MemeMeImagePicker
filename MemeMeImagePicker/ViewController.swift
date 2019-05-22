@@ -18,6 +18,22 @@ UINavigationControllerDelegate {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        print("imagePickerControllerDidCancel()")
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController,
+                               didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        print("imagePickerController()")
+        if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+//            imageView.contentMode = .scaleAspectFit
+            imageView.image = pickedImage
+        }
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
     @IBAction func pickAnImage(_ sender: Any) {
         
         let imagePicker = UIImagePickerController()

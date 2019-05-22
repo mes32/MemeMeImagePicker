@@ -28,18 +28,22 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wie-uP-ohf">
-                                <rect key="frame" x="0.0" y="20" width="375" height="346"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wie-uP-ohf">
+                                <rect key="frame" x="0.0" y="20" width="375" height="343"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wie-uP-ohf" secondAttribute="height" multiplier="375:343" id="egm-DV-I59"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ROg-Lr-VMH" secondAttribute="bottom" id="G9o-qB-lVo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wie-uP-ohf" secondAttribute="trailing" constant="135" id="Hsg-ci-dvd"/>
-                            <constraint firstItem="wie-uP-ohf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YDt-hY-Wqi"/>
+                            <constraint firstItem="wie-uP-ohf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Rys-Uh-N2m"/>
                             <constraint firstItem="ROg-Lr-VMH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="f6c-1p-uY7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wie-uP-ohf" secondAttribute="trailing" id="fd7-g9-REG"/>
+                            <constraint firstItem="wie-uP-ohf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gYc-Wv-QoZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ROg-Lr-VMH" secondAttribute="trailing" id="iXK-nc-rHb"/>
-                            <constraint firstItem="wie-uP-ohf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="7" id="mrd-M6-YL8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
